@@ -41,21 +41,21 @@ p{
 }
 
 
+
+
 #popup-win h4{
   font-size: 15px;
   color: black;
 }
 
-#popup-win img{
-  border: 0;
-  outline: none;
-  background: white;
-  cursor:pointer;
+.popup img{
+  width: 100px;
   position: center;
   border-radius: 30px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 #popup-win button{
   padding: 10px 60px;
