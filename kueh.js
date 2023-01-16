@@ -20,6 +20,8 @@ window.onload = function() {
   startGame();
   let refreshIntervalId = window.setInterval(updateCountdown,1000); //update every 1 sec
   //1/10th of a second
+
+
   window.setInterval(function(){
     crushKueh();
     slideKueh();
@@ -33,10 +35,15 @@ window.onload = function() {
     seconds = seconds < 10? '0'+ seconds:seconds;
     countdownEl.innerHTML = `${minutes}:${seconds}`;
     time--;
+    if (time == 0) {
+      alert('Game Over!'); // popup message when the timer ends
+    }
+
     if (time < 0) { //stop the setInterval whe time = 0 for avoid negative time
       clearInterval(refreshIntervalId);
     }
   }
+
 }
 
 
@@ -137,7 +144,6 @@ function crushKueh() {
   crushThree();
   document.getElementById("score").innerText = score;
 
-  //do time?
 
 
 }

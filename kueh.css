@@ -28,6 +28,7 @@ p{
   margin: 0 auto 10px;
 }
 .popup-win{
+  display: block;
   width: 600px;
   background: #fdfaf5;
   border-radius: 10px;
@@ -38,6 +39,7 @@ p{
   text-align: center;
   padding: 0 30px 30px;
   color: #333;
+  visibility: hidden;
 }
 
 
@@ -48,6 +50,9 @@ p{
   color: black;
 }
 
+.open-popup{
+  visibility: visible;
+}
 .popup img{
   width: 100px;
   position: center;
@@ -56,8 +61,10 @@ p{
   display: flex;
   flex-wrap: wrap;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
 }
 #popup-win button{
+
   padding: 10px 60px;
   border: 2px solid #5450ab;
   outline: black;
